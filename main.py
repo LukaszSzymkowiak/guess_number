@@ -3,7 +3,6 @@
 from functions import *
 
 
-# main
 def main():
     while True:
         game_choice = input("User guess = 'u'\n"
@@ -11,10 +10,10 @@ def main():
                             "Your choice: ").lower()
         if game_choice.isalpha() and game_choice in ["u", "c"]:
             if game_choice == "u":
-                user_guessing()
+                user_guessing_game()
                 break
             elif game_choice == "c":
-                computer_guessing()
+                computer_guessing_game()
                 break
         else:
             print("Incorrect command.")
